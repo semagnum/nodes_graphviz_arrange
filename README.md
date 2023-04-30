@@ -2,9 +2,9 @@
 
 ## Overview
 
-This is an add-on for Blender 3.5+ that uses the free, open-source [Graphviz](http://graphviz.org/) (a.k.a. `dot`) to automatically arrange nodes in a nice-looking, easy-to-read way. A screencast follows:
+This is an add-on for Blender 3.5+ that uses the free, open-source [Graphviz](http://graphviz.org/) (a.k.a. `dot`) to automatically arrange nodes in a nice-looking, easy-to-read way:
 
-![(Screencast of Arrange Nodes via Graphviz)](https://github.com/tachimarten/nodes-graphviz-arrange/GraphvizScreencast.gif)
+![(Screencast of Arrange Nodes via Graphviz)](https://github.com/tachimarten/nodes-graphviz-arrange/raw/main/GraphvizScreencast.gif)
 
 Compared to the built-in [Node Arrange] add-on, Arrange Nodes via Graphviz has the following advantages:
 
