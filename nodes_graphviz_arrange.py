@@ -119,6 +119,11 @@ class GraphvizAutodetect(Operator):
         return find_in_path()
 
     @classmethod
+    def find_graphviz_or_empty_string(klass):
+        dot_path = GraphvizAutodetect.find_graphviz()
+        return "" if dot_path is None else dot_path
+
+    @classmethod
     def require_graphviz(klass, context):
         dot_path = None
         if __name__ in context.preferences.addons:
@@ -158,7 +163,8 @@ class GraphvizAddonPreferences(AddonPreferences):
     bl_idname = __name__
 
     dot_path: StringProperty(name="\"dot\" Tool Location",
-                             subtype='FILE_PATH', default=GraphvizAutodetect.find_graphviz(),
+                             subtype='FILE_PATH',
+                             default=GraphvizAutodetect.find_graphviz_or_empty_string(),
                              description=textwrap.dedent("""\
         The location of \"dot.exe\". The addon will do its best to automatically detect this, but
         you may have to specify it manually if that fails. You can install Graphviz from
