@@ -38,7 +38,7 @@ To use Arrange Nodes via Graphviz, you'll first need to install the free, open-s
 
 After installing Graphviz, clone or download this repository somewhere on your disk. Then, in Blender, choose Edit → Preferences, select "Add-ons" on the left, click the "Install…" button, and pick `nodes_graphviz_arrange.py`. Then click the check mark next to "Node: Arrange Nodes via Graphviz".
 
-At this point, you need to ensure that the "`dot` Tool Location" box in the add-on preferences (now visible right underneath "Node: Arrange Nodes via Graphviz") isn't empty. If it is empty, ensure that Graphviz is installed via one of the methods above, and then click "Find Graphviz Automatically". If the "`dot` Tool Location" box is still empty even after clilcking that button, then click the 📁 folder icon to the right of it, and navigate to `dot.exe` (on Windows) or `dot` (on macOS and Linux).
+At this point, you need to ensure that the "`dot` Tool Location" box in the add-on preferences (now visible right underneath "Node: Arrange Nodes via Graphviz") isn't empty. If it is empty, ensure that Graphviz is installed via one of the methods above, and then click "Find Graphviz Automatically". If the "`dot` Tool Location" box is still empty even after clicking that button, then click the 📁 folder icon to the right of it, and navigate to `dot.exe` (on Windows) or `dot` (on macOS and Linux).
 
 ## Usage
 
